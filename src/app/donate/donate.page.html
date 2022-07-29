@@ -1,0 +1,153 @@
+<ion-header collapse="condense" 
+            class= "header">
+
+    <ion-toolbar color = "darkest-blue" >
+      <!--Image holder-->
+      <ion-thumbnail slot="start">
+        <!--Logo of E-CoNature-->        
+        <ion-img src="assets\logo\ECo.png">
+        </ion-img>
+      </ion-thumbnail>
+      
+      <!--System Title/ Name-->
+      <ion-title size="large" 
+                class="econature">
+        E-CoNature
+      </ion-title>
+      
+      <!--Hamburger Icon-->
+      <ion-buttons slot="end" 
+                    class="menu_button">
+        <ion-menu-button class="menu_button"
+                           menu="donor_menu">
+        
+        </ion-menu-button>
+      </ion-buttons>
+      
+    </ion-toolbar>
+</ion-header>
+
+    
+
+<ion-content color="success">
+  <h2>Donate</h2>
+  <ion-card >
+    <ion-accordion-group>
+      <ion-accordion value="first" color="white">
+        <ion-item  slot="header" >
+          <ion-label color="dark"><b>Select Activity</b></ion-label>
+        </ion-item>
+        <div slot="content">
+          <ion-radio-group allow-empty-selection>
+            <ion-item>
+              <ion-label color="dark">Mangrove Reforestation</ion-label>
+              <ion-radio slot="end" color="primary" value="Activity 1"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark">Seminar Human Impacts on River</ion-label>
+              <ion-radio slot="end" color="secondary" value="Activity 2"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark">River Clean-Up Drive</ion-label>
+              <ion-radio slot="end" color="tertiary" value="Activity 3"></ion-radio>
+            </ion-item>
+
+          </ion-radio-group>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  
+  
+  
+    <link rel = "stylesheet" href="donate.page.css">
+    <ion-item>
+    <ion-label color="dark" ><b>Amount to Donate</b></ion-label>
+    </ion-item>
+    <ion-grid>
+      <ion-row class = "ion-text-center">
+        <ion-col>
+          <ion-button fill="outline" expand="block" color="dark"><b> 50</b></ion-button>
+       </ion-col>
+       <ion-col>
+          <ion-button fill="outline" expand="block" color="dark"><b>100</b></ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" expand="block" color="dark"><b> 200</b></ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" expand="block" color="dark"><b>300</b></ion-button>
+       </ion-col>
+      </ion-row>  
+
+      <ion-row class = "ion-text-center">
+       <ion-col>
+          <ion-button fill="outline" expand="block" color="dark"><b> 500</b></ion-button>
+       </ion-col>
+       <ion-col>
+         <ion-button fill="outline" expand="block" color="dark"><b> 800</b></ion-button>
+        </ion-col>
+       <ion-col>
+          <ion-button fill="outline" expand="block" color="dark"><b>1000</b></ion-button>
+        </ion-col>
+       <ion-col>
+          <ion-button fill="outline" expand="block" color="dark"><b>5000</b></ion-button>
+       </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-item>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item  slot="header">
+          <ion-label color="dark"><b>Donation Method</b></ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-radio-group allow-empty-selection>
+            <ion-item>
+              <ion-label color="dark"><b>Gcash</b></ion-label>
+              <ion-radio slot="end" color="primary" value="G-Cash"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark"><b>Credit Card</b></ion-label>
+              <ion-radio slot="end" color="secondary" value="Credit Card"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark"><b>Cash</b></ion-label>
+              <ion-radio slot="end" color="tertiary" value="Cash"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  
+   <ion-card>
+    <ion-button type="submit"  expand="block" color="primary"> Donate Now</ion-button>
+   </ion-card>
+   </ion-card>
+</ion-content>
+
+<!--Footer-->
+<ion-footer collapse="fade" 
+            class="footer">
+
+  <ion-toolbar color = "dark-green">
+    <ion-thumbnail slot="primary">
+      <!--Save Calumpang River Movement, Inc. Logo-->
+      <ion-img src="assets\logo\SACRM.png">
+      </ion-img>
+    </ion-thumbnail>
+    
+    <!--Text on footer-->
+    <ion-title size="small" 
+              class="sacrm">
+      Donation Application for Save Calumpang River Movement, Inc.
+  </ion-title>
+    
+  </ion-toolbar>
+</ion-footer>

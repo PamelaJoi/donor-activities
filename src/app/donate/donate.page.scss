@@ -1,0 +1,41 @@
+.header{
+    position: relative;
+    background-color: #001250;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  }
+  
+  /*Title of the App*/
+  .econature{
+    color:#FFFF;
+    text-align: center;
+  }
+  
+  /*Button to be toggled*/
+  .menu_button{
+    size: large;
+    color:#D4F6BF;
+  }
+
+  h2{
+    color: white;
+    font-size:30px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+  ion-button:hover{
+    background-color: #99C24D;
+  }
+
+   /*For footer*/
+   .footer{
+    position: relative;
+    background-color: #0A4700;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  }
+  
+  /*For donation application for SACRM*/
+  .sacrm{
+    color:#FFFF;
+    text-align: center;
+  }

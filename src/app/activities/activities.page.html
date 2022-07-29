@@ -8,8 +8,6 @@
         <ion-img src="assets\logo\ECo.png">
         </ion-img>
       </ion-thumbnail>
-      
-      <!--System Title/ Name-->
       <ion-title size="large" 
                 class="econature">
         E-CoNature
@@ -27,20 +25,18 @@
     </ion-toolbar>
 </ion-header>
 
-
-<ion-content padding class="background">
-  <h2>Let's Save Calumpang River</h2>
-   <ion-card class="card-header">
-    <link rel = "stylesheet" href = "activities.page.scss">
-      <img src="assets\pics\Calumpang River.png">
-      <p>
-      The blue veins of our globe are rivers. However, plastic pollution is one of the main causes of the severe pollution that plagues many of the world's rivers and streams. We must eliminate plastic pollution before it enters our seas in order to reduce the quantity that cannot be collected or recycled from entering those waters.
-      The best approaches to prevent plastic pollution from entering our ecosystem, in our opinion, are through educating people, changing businesses, and vigorously cleaning our waterways.
-      </p>
+<ion-content padding class = "background">
+  <h2>Activities</h2>
+  <ion-card *ngFor = "let donor of activities">
+    <ion-card-header class = "head">
+      <ion-img [src] = "donor.image"></ion-img>
+      <ion-card-title class = "text"> {{donor.activity}} </ion-card-title>
+      <ion-label class = "text-a"> {{donor.info}} </ion-label>
+    </ion-card-header>
   </ion-card>
-  
- </ion-content>
+</ion-content>
 
+ 
  <ion-footer collapse="fade" 
  class="footer">
 

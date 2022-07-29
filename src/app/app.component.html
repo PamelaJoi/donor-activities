@@ -1,3 +1,80 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu
+            menuId="donor_menu" 
+            content-id="donor_menu">
+    <ion-header class="menu_header">
+      <ion-toolbar color = "darkest-blue">
+        <ion-title class="econature">
+          E-CoNature
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content >
+      
+      <ion-list>
+        <ion-menu-toggle auto-hide="true">
+        <ion-item *ngFor = "let tab of donor_menu">
+          <ion-icon [name]="tab.icon"
+                    class="menu_icon"
+                    slot="start"
+                    size="large">
+            </ion-icon >
+          <ion-button class="menu_btn"
+                      fill="clear"
+                      [routerLink]="tab.url" >
+              {{tab.name}}
+          </ion-button>
+        </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+      
+      <ion-button href="../donor-details"
+                  color="warning"
+                  class="donate_now_button"
+                  fill="solid">
+        Donate Now!
+      </ion-button>
+
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="donor_menu">
+  </ion-router-outlet>
+
+  <!-- Admin Menu
+  <ion-menu
+  menuId="admin_menu" 
+  content-id="admin_menu">
+<ion-header class="menu_header">
+<ion-toolbar color = "darkest-blue">
+<ion-title class="econature">
+E-CoNature
+</ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content >
+  <ion-list>
+    <ion-menu-toggle auto-hide="true">
+    <ion-item *ngFor = "let adtab of admin_menu">
+      <ion-icon [name]="adtab.icon"
+                class="menu_icon"
+                slot="start"
+                size="large">
+                {{adtab.icon}}
+        </ion-icon >
+      <ion-button class="menu_btn"
+                  fill="clear"
+                  [routerLink]="adtab.url" >
+          {{adtab.name}}
+      </ion-button>
+    </ion-item>
+  </ion-menu-toggle>
+  </ion-list>
+</ion-content>
+</ion-menu>
+<ion-router-outlet id="admin_menu">
+</ion-router-outlet>
+-->
+
 </ion-app>

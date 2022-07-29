@@ -1,0 +1,43 @@
+/*For the Menu Header*/
+.menu_header{
+    position: relative;
+    background-color: #001250;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  }
+  
+  /*menu_header*/
+  .econature{
+    color:#FFFF;
+    text-align: center;
+    font-size: 1rem;
+  }
+ 
+/*buttons of the menu*/
+  .menu_btn{
+    color: var(--ion-color-dark-green);
+    height: 50px;
+    width: 520;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+  }
+
+  /*buttons when hovered*/
+  .menu_btn:hover{
+    color: var(--ion-color-lighter-blue);
+}
+/*icons of the buttons*/
+  .menu_icon{
+    color: var(--ion-color-darkest-blue);
+  }
+
+  /*donation button*/
+  .donate_now_button{
+    height: 50px;
+    width: 520;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
